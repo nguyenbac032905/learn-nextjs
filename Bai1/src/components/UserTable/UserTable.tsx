@@ -1,6 +1,7 @@
 "use client"
 import { useEffect, useState } from 'react';
 import './userTable.css';
+import Link from 'next/link';
 
 interface User {
     id: number;
@@ -26,7 +27,7 @@ const UserTable = (props: Props) => {
                     <tbody>
                         {users?.map(user => (
                             <tr key={user.id}>
-                                <td>{user.id}</td>
+                                <td><Link href={`/user/${user.id}`}>{user.id}</Link></td>
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
                             </tr>

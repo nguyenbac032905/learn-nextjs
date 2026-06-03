@@ -9,6 +9,7 @@
 * Copyright (c) 2025 Hỏi Dân IT. All Rights Reserved. 
 */
 
+import Link from 'next/link';
 import './layout.css';
 
 const Header = () => {
@@ -19,16 +20,16 @@ const Header = () => {
                 <nav>
                     <ul className="nav-links">
                         <li>
-                            <a href="#">Home</a>
+                            <Link href="/">Home</Link>
                         </li>
                         <li>
-                            <a href="#">Users</a>
+                            <Link href="/user">Users</Link>
                         </li>
                         <li>
-                            <a href="#">Blogs</a>
+                            <Link href="/blog">Blogs</Link>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <Link href="/about">About</Link>
                         </li>
                     </ul>
                 </nav>
