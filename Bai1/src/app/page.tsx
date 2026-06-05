@@ -1,6 +1,9 @@
 import Counter from "@/components/Counter/Counter";
 import "./global.css";
 import UserTable from "@/components/UserTable/UserTable";
+import { notFound } from "next/navigation";
+import NImage from "@/components/layouts/n.image";
+import Image from "next/image";
 
 interface User {
     id: number;
@@ -33,11 +36,15 @@ const HomePage = async () => {
     });
     
     const data: User[] = await res.json();
-
+    
     return (
         <>
             <div className="container">
-                <Counter />
+                {/* <Counter /> */}
+                <div>
+                    <img src="http://localhost:4000/big-mua-thu.jpg" width={500} height={500}/>
+                    <NImage src="/big-mua-thu.jpg" alt="Big Mua Thu" width={500} height={500} />
+                </div>
                 <div className="user-table">
                     <h1>User Table</h1>
                     <UserTable users={data}/>

@@ -1,0 +1,26 @@
+{
+  "name": "04-backend-loader-img-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Hỏi Dân IT vs Eric",
+    "url": "https://hoidanit.vn"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "compression": "1.8.1",
+    "cors": "2.8.5",
+    "dotenv": "17.2.3",
+    "express": "5.1.0",
+    "morgan": "1.10.1",
+    "sharp": "0.34.4"
+  }
+}
